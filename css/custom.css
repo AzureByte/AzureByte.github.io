@@ -1,0 +1,148 @@
+body {
+  padding-top: 50px;
+}
+
+hr {
+	border-color: #e74c3c;
+	width: 160px;
+	margin-top: 12px;
+}
+
+footer {
+	background-color: #f74c3c;
+	padding-left:20px;
+	padding-top:150px;
+	padding-bottom:30px;
+}
+
+ul.nav {
+	font-size: 13px;
+}
+
+ul.nav, .jumbotron h1 {
+	font-family: 'Arvo', courier, serif;
+}
+
+
+.homepage {
+	text-align: center;
+	padding-top: 30px;
+  	padding-bottom: 30px;
+}
+
+.homepage h2, .homepage h3 {
+	text-transform: uppercase;
+	font-family: 'Arvo', courier, serif;
+	color: #e74c3c;
+}
+
+.homepage h3 {
+	font-size: 26px;
+}
+
+.homepage h2 {
+	font-size: 30px;
+}
+
+.homepage p{
+	font-size: 21px;
+	font-weight: 300;
+}
+
+.emphasis {
+	font-weight: bold;
+	font-size: 1.1em;
+}
+
+.jumbotron {
+	text-align: center;
+	background-image: url("../Images/Hero.jpg");
+	background-attachment: fixed;
+	color: white;
+	background-size: 100%;
+}
+
+.jumbotron h1 {
+	margin-top: 0px;
+	margin-bottom: 50px;
+}
+.jumbotron p {
+	padding: 0 50px;
+	margin-bottom: 30px;
+	font-weight: 100;
+}
+
+
+.btn-lg {
+	font-size: 36px;
+}
+
+.homepage a {
+	color: #e74c3c;
+}
+
+.homepage a:hover {
+	color: #e74c3c;
+	text-decoration: none;
+	opacity: 0.8;
+}
+
+#azurebytelogo {
+	width:300px;
+}
+
+#get-involved {
+	background-color: #f5f5f5;
+}
+
+/* Responsive Styling */
+
+@media (max-width: 1199px){
+
+	.jumbotron h1 {
+		font-size: 56px;
+		margin-bottom: 30px;
+	}
+
+}
+
+@media (max-width: 991px){
+
+	.jumbotron h1 {
+		font-size: 44px;
+	}
+
+	.jumbotron p {
+		padding: 0 10px;
+	}
+
+	#get-involved {
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+}
+
+@media (max-width: 767px){
+
+	.jumbotron h1 {
+		font-size: 28px;
+	}
+
+	.jumbotron p {
+		padding: 0;
+		font-size: 16px;
+	}
+
+	.btn-lg{
+		font-size: 18px;
+	}
+
+	.homepage p {
+		font-size: 18px;
+	}
+
+	#get-involved {
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+}
