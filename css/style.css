@@ -42,3 +42,7 @@ p {
 #logo {
 	max-width: 700px;
 }
+
+.youtube-embed{
+	max-width: 560px;
+}
