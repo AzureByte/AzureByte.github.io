@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css?family=Abril+Fatface|Acme');
+
+html {
+	background: #222 url(../img/board.png) bottom right no-repeat;
+	height: 100%;
+	background-attachment: fixed;
+	overflow-y: scroll;
+}
+
+body {
+	background: none;
+	font-family: 'Acme', sans-serif;
+	font-size: 16px;
+	color: #7ae8ff;
+
+	/*Required for fixed navbar*/
+	padding-top: 50px;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	font-family: 'Abril Fatface', cursive;
+	margin-top: 0;
+	color: #fff;
+}
+
+p {
+	margin-bottom: 1rem;
+}
+
+.navbar-inverse .navbar-brand {
+	font-weight: bold;
+}
+
+.container {
+	padding-bottom: 5rem;
+}
+
+.header-color {
+	color: #fff;
+}
+
+#logo {
+	max-width: 700px;
+}

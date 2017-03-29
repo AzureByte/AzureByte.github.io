@@ -1,69 +1,239 @@
-
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="AzureByte">
-    <link rel="icon" href="../../favicon.ico">
+<head>
+	<!-- Declarations-->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Home of AzureByte's musings</title>
+	<title>AzureByte's Portfolio</title>
+	
+	<!-- Imports -->
+	<link rel="stylesheet" href="./css/bootstrap.min.css">
+	<script src="./js/jquery-3.2.0.min.js"></script>
+	<script src="./js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="./css/style.css">
+	<script type="text/javascript">
+		window.addEventListener("hashchange", function (e) {
+			if (e.newURL.includes("#contact")) {
+				return;
+			}
 
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="./fonts/font-awesome/css/font-awesome.min.css">
+			//HACK - Modify the scroll to depending on when Bootstrap changes the menu.
+			let width = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+			let add_px;
 
-    <!-- Google Arvo Font -->
-    <link href='http://fonts.googleapis.com/css?family=Arvo' rel='stylesheet' type='text/css'>
+			if (width < 768) 
+			{
+				add_px = 250;
+			} else {
+				add_px = 70;
+			}
 
-    <!-- Bootstrap core CSS -->
-    <link href="./css/bootstrap.min.css" rel="stylesheet">
+			window.scrollTo(window.scrollX, window.scrollY - add_px);
+		});
+	</script>
+</head>
+<body>
+<div class="site-wrapper">
+	
+	<!-- Mobile friendly bar -->
+	<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+		<div class="container-fluid">
+		<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-1">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#top">AzureByte's Portfolio</a>
+			</div>
 
-    <!-- Custom styles for this template -->
-    <link href="./css/custom.css" rel="stylesheet">
-
-
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-  </head>
-
-  <body data-spy="scroll" data-target=".navbar-collapse" data-offset="100">
-
-    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#top"><img src="Images/top-logo-new.png" alt="AzureByte Logo" title="Logo"></a>
-        </div>
-      </div>
-    </div>
-
-    <hr>
-    
-    <div> Under Construction... </div>
-
-    <div id="back-to-top">
-      <a href="#top">
-        <i class="fa fa-3x fa-chevron-circle-up"></i>
-      </a>
-    </div>
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse navbar-right" id="navbar-collapse-1">
+				<ul class="nav navbar-nav">
+				<li><a href="#top" title="Home">Home</a></li>
+				<li><a href="#projects" title="Creations or modifications that I have put effort into">Projects</a></li>
+				<li><a href="#experience" title="Time spent professionally learning and earning money">Work Experience</a></li>
+				<!-- TODO Add Photos <li><a href="#photos" title="Captured moments forever lost until time machines">Photographs</a></li> -->
+				<!-- TODO Add Blog once its active <li><a href="blog.html" title="(external link)">Blog</a></li> -->
+				<li><a href="#contact" title="Lets chat!">Contact</a></li>
+				</ul>
+			</div><!-- /.navbar-collapse -->
+		</div><!-- /.container-fluid -->
+	</nav>
 
 
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script src="./js/bootstrap.min.js"></script>
-    <script src="./js/smoothscroll.js"></script>
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="./js/ie10-viewport-bug-workaround.js"></script>
-  </body>
+
+
+
+	<div class="container" align="center">
+		<img id="logo" src="./img/Logoalpha.png" width="100%">
+		<h1><span>Kenric A. D'Souza</span></h1>
+	</div>
+
+	<br />
+
+
+
+
+	<div class="container">
+		<h2>Welcome!</h2>
+		<p>If you've never met me, you'll find I am a man of varied interests, mostly in Science, Nature, Astronomy, Photography, Computers and Video Games. This site is mostly a professional summary of the things I have done over the years.</p>
+	</div>
+
+
+
+
+	<div class="container" id="projects">
+		<h2>Projects : </h2>
+		<ul>
+			<li>
+				<div>
+					<h4>Global Game Jam 2017 “Meltdown” Game - 2017</h4>
+					<p>Lead a team of 4 to design and develop a prototype game based around the theme “Waves”, in​Unity3D​. The idea was to have the player prevent a meltdown by figuring out the confusing controls on a nuclear reactor. </p>
+				</div>
+			</li>
+			<li>
+				<div>
+					<h4>Freelance - HIPPA Compliant Healthcare App - 2016</h4>
+					<p>Fixing and testing for security, UI and performance issues related to an existing ​MeteorJS app connected to ​MongoDB​, later transferred to ​AWS​. Assisted with removing external JavaScript dependencies and converted code to native ​JavaScript​ without any framework. </p>
+				</div>
+			</li>
+			<li>
+				<div>
+					<h4>BookMyShow - Database Optimization and Migration - 2015/2016</h4>
+					<p>Analyzing performance bottlenecks in​ASP.Net code and​SQL​queries using​NewRelic and using the data to design a better system in ​NoSQL using technologies like ​Redis​, ​MongoDB and ​NodeJS​. Optimizations in 2015 decreased the database load by 90% and allowed the site to stay up during the yearly holiday peak time, where in the past it has succumbed and gone offline. All this ultimately leading to less frustrated, happier online customers and increased conversions</p>
+				</div>
+			</li>
+			<li>
+				<div>
+					<h4>BookMyShow - Bamboo Deployment - 2015/2016</h4>
+					<p>Getting projects in ​C#/.NET ready to be deployed using Atlassian’s Bamboo​, to help with Continuous Integration and Deployment. Worked with teams to help them write unit tests and maintain consistent Git flow to ease release of new features</p>
+				</div>
+			</li>
+			<li>
+				<div>
+					<h4>BookMyShow - Online Wallet - 2015</h4>
+					<p>A core developer on the team for designing and implementing a system for cardless online payments developed using​ C#​, ​Redis​, ​SQL and ​Couchbase​. Millions of Indian users can now recharge money into a wallet system which gives them offers and allows a combination of payment methods in cases of insufficient balance.</p>
+				</div>
+
+			</li>
+		</ul>
+	</div>
+
+
+
+
+
+
+	<div class="container">
+		<h2>Coursework Assignments : </h2>
+		<ul>
+			<li>
+				<div>
+					<h4>1 Minute pitch for "Meltdown" (Part of Coursera Game Development Specialization)</h4>
+					<p><iframe width="560" height="315" src="https://www.youtube.com/embed/YnFDk-q9eqY" frameborder="0" allowfullscreen></iframe></p>
+				</div>
+			</li>
+			<li>
+				<div>
+					<h4>High Concept Document for "Inzzzomniacs" (Part of Coursera Game Development Specialization)</h4>
+					<p><a href="https://docs.google.com/document/d/1bi7JcEcduFCIdAuRVTScD8kSg2evc2MU6Eh3_SkDnMg/edit?usp=sharing">The game is based around the idea of having a versus fighter with a group of people who want sleep but cannot get any.</a></p>
+				</div>
+			</li>
+			<li>
+				<div>
+					<h4>Production Schedule for "The Healer" (Part of Coursera Game Development Specialization)</h4>
+					<p><a href="https://docs.google.com/document/d/13TvQ6LZX7_-RZycSoiVq-7IRH1Z5Fq_ts1RH_ySlM0A/edit?usp=sharing">Proposed a 3 person work schedule for a hypothetical game.</a></p>
+				</div>
+			</li>
+		</ul>
+	</div>
+	
+
+
+
+	<div class="container" id="experience">
+		<h2>Work experience : </h2>
+		<ul> <!--TODO Make this sortable by language, years of experience and Job Type -->
+			<li>
+				<div>
+					<h4>Freelance Developer &nbsp;<span>2016 - Present</span></h4>
+					<p></p>
+				</div>
+			</li>
+			<li>
+				<div>
+					<h4>Software Engineer at BookMyShow - Mumbai &nbsp;<span>2015 - 2016</span></h4>
+					<p>Designed and implemented caching to increase the database performance by 90%. System migration out of SQL and toward open source technologies.</p>
+				</div>
+			</li>
+			<li>
+				<div>
+					<h4>Jr. Software Developer at BookMyShow - Mumbai &nbsp;<span>2014 - 2015</span> </h4>
+					<p><span class="header-color">2015</span><br />Design and development of a new transactional system based around a digital wallet. Design and development of promotional offers using CouchBase, MongoDB and 3rd party API calls.</p>
+					<p><span class="header-color">2014</span><br />Back-end integration of new Payment Gateways into BookMyShow's website. Maintaining code and fixing bugs. Database migration from MSSQL to MySQL including conversion of stored procedures and ASP .NET code. Researching new alternatives to existing systems and aiding in the shift to open source technologies like Node.js, MongoDB, Couchbase and GoLang.</p>
+				</div>
+			</li>
+			<li>
+				<div>
+					<h4>Intern at WWF - Mumbai Head Office &nbsp;<span>Jun 2012 - Jul 2012</span> </h4>
+					<p>Assisted in Data entry and database maintenance of Donor data. Wrote a popular article for ‘Panda Bulletin’. Gave a presentation titled ‘Energy Conservation in Animals’ to Teachers during the ‘Teachers’ Training Workshop’. Assisted in conducting a training workshop teaching students how to train others to be nature friendly. Spoke to principals of schools over the phone inviting inviting their students to the ‘Wild Wisdom Quiz’ and answering queries they had about the same.</p>
+				</div>
+			</li>
+			<li>
+				<div>
+					<h4>Intern at BNHS - Bombay Natural History Society &nbsp;<span>Jun 2011 - Sep 2011</span> </h4>
+					<p>Assisted in the study of life cycles of moths and in the awareness programmes for school children. Created a Microsoft Access Database system for the management of the data of the Leadership Course, along with a handy Manual to go with it. Surveyed the area of a newly built ‘watch tower’ to help assess the damage to the area’s ecosystem.</p>
+				</div>
+			</li>
+			<li>
+				<div>
+					<h4>Volunteer at PALS - Plants and Animal Lovers Society Veterinary Clinic &nbsp;<span>2009 – 2010</span> </h4>
+					<p>Assisted doctors in caring for animals. Answered phone calls to the clinic.</p>
+				</div>
+			</li>
+		</ul>
+	</div>
+	
+
+
+	<!--TODO Make this a slideshow of random images from the gallery
+	<div class="container" id="photos">
+		<h2>Some nice pictures : </h2>
+		<div></div>
+	</div>
+	-->
+
+
+
+	<div class="container">
+		<h2>Would recommend games :</h2>
+		<ul>
+			<li><a href="http://www.nightinthewoods.com/">Night in the Woods</a></li>
+			<li><a href="http://luftrausers.com/">Luftrausers</a></li>
+			<li><a href="https://www.battlerite.com/">Battlerite</a></li>
+			<li><a href="http://terraria.org/">Terraria</a></li>
+			<li><a href="http://spaceteam.ca/">SpaceTeam</a></li>
+		</ul>
+	</div>
+
+	
+
+
+
+	<div class="container" id="contact">
+		<h2>Contact Info : </h2>
+		<div class="row">
+			<div class=".col-xs-6 col-sm-3"><span>LinkedIn</span> : <span><a href="https://www.linkedin.com/in/kenricdsouza/">kenricdsouza</a></span></div>
+			<div class=".col-xs-6 col-sm-3"><span>Github</span> : <span><a href="https://github.com/azurebyte">azurebyte</a></span></div>
+			<div class=".col-xs-6 col-sm-3"><span>Twitter</span> : <span><a href="https://twitter.com/azurebyte">@AzureByte</a></span></div>
+			<div class=".col-xs-6 col-sm-3"><span>Medium</span> : <span><a href="https://medium.com/@AzureByte">AzureByte</a></span></div>
+		</div>
+	</div>
+</div>
+
+</body>
 </html>
