@@ -31,6 +31,11 @@
 
 			window.scrollTo(window.scrollX, window.scrollY - add_px);
 		});
+		window.onLoad(function(){
+			$('.carousel').carousel({
+			  interval: 2000
+			});
+		})
 	</script>
 </head>
 <body>
@@ -89,6 +94,44 @@
 	<div class="container" id="projects">
 		<h2>Projects : </h2>
 		<ul>
+			<li>
+				<div>
+					<h4>2D Arena Brawler - Skool Brawl - 2017</h4>
+					<p>One of the two programmers on the 5 person team (others worked on Art, Sound and Music) created entirely through Reddit. Coded in Unity3D C#, I primarily worked on the general logic, AI, testing and fixing bugs. This game was created in 48 hours as part of the <a href="https://itch.io/jam/bscotch100">ShenaniJam Game Jam</a> based around a given random theme, "Dude 52". Published and playable for free on <a href="https://xavier-indie-gamedev.itch.io/skool-brawl-slaps-and-dabs">Itch.io</a>.</p>
+					<p>
+						<div id="skool-carousel" class="carousel slide" data-ride="carousel">
+						    <ol class="carousel-indicators">
+						        <li data-target="#skool-carousel" data-slide-to="0" class="active"></li>
+						        <li data-target="#skool-carousel" data-slide-to="1"></li>
+						        <li data-target="#skool-carousel" data-slide-to="2"></li>
+						    </ol>
+
+						    <!-- Photos -->
+						    <div class="carousel-inner" role="listbox">
+						    	<div class="item active">
+						    		<img src="./img/skool/start.png" alt="The Main Menu of Skool Brawl" />
+						    	</div>
+						    	<div class="item">
+						    		<img src="./img/skool/game.png" alt="Gameplay of Skool Brawl" />
+						    	</div>
+						    	<div class="item">
+						    		<img src="./img/skool/end.png" alt="Game over screen of Skool Brawl" />
+						    	</div>
+						    </div>
+
+					    	<!-- Prev/Next -->
+							<a class="left carousel-control" href="#skool-carousel" role="button" data-slide="prev">
+							    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+							    <span class="sr-only">Previous</span>
+							</a>
+							<a class="right carousel-control" href="#skool-carousel" role="button" data-slide="next">
+							    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+							    <span class="sr-only">Next</span>
+							</a>
+						</div>
+					</p>
+				</div>
+			</li>
 			<li>
 				<div>
 					<h4>2D Infinite Climber - Marty Escapes Goblin Mountain - 2017</h4>
